@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Container, Row, Col, Button, Navbar, Nav, Form } from 'react-bootstrap';
+import { Container, Row, Col, Button, Navbar, Nav } from 'react-bootstrap';
 import '../Home/home.css';
 import TextArea from '../../Components/TextArea';
 import Score from '../../Components/Score';
@@ -8,7 +8,7 @@ import {randomText} from '../../Constant';
 import logo from '../../Assets/Image/logo.jpeg';
 import Sound from '../../Assets/Audio/key.mp3';
 import ScoreCard from '../../Components/ScoreCard';
-import { PayPalButton } from "react-paypal-button-v2";
+// import { PayPalButton } from "react-paypal-button-v2";
 
 let audio = new Audio(Sound);
 
@@ -81,7 +81,7 @@ function App() {
         </Container>
       </Navbar>
       
-       <Row>
+       <Row >
            <Col xl={7} >
             < br />
             <TextArea currentText={currentText} userText={userText}/>
@@ -104,7 +104,7 @@ function App() {
           <Col lg = {7}>
          {/* <Form.Control className="input" size="lg" type="text" placeholder="Donation Amount?" onChange={(e) => setDonation(e.target.value)}/> */}
          </Col>
-        <Col lg={5}
+        {/* <Col lg={5}
             style={{opacity:"0"}}
         >
           <PayPalButton
@@ -122,7 +122,7 @@ function App() {
                     });
                 }}
             />
-         </Col>
+         </Col> */}
          
        </Row>
        <Row>
