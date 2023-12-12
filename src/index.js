@@ -13,13 +13,14 @@ const client = new ApolloClient({
   })
 });
 
-ReactDOM.render(
-  <ApolloProvider client={client}>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <ApolloProvider client={client}>
     <App />
   </ApolloProvider>,
-document.getElementById('root')
+  </React.StrictMode>
 );
-
 
 serviceWorkerRegistration.register();
 
