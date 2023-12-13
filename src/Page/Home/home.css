@@ -32,7 +32,7 @@ body {
   overflow: hidden;
 
 }
-@media (max-width: 2560px) and (max-height: 675px) {
+@media (max-width: 2560px) and (max-height: 600px) {
   body {
     overflow: auto;
   }
