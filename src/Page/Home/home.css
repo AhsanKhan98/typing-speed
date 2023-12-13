@@ -32,9 +32,11 @@ body {
   overflow: hidden;
 
 }
-/* .mainRow{
-    height: 100vh;
-} */
+@media (max-width: 2560px) and (max-height: 675px) {
+  body {
+    overflow: auto;
+  }
+}
 @media (max-width: 1200px) {
   body {
     overflow: auto;
